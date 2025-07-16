@@ -30,7 +30,7 @@ export default function Hero() {
             <a href="#contact" className="hero-btn">Contact Me</a>
           </div>
           <div className="hero-img">
-            <img src="/page1.jpg" alt="Ashik" />
+            <img src="/page1.jpg" alt="profile" />
           </div>
         </div>
       </div>
