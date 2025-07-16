@@ -5,7 +5,7 @@ const techs = [
   { name: 'React', icon: '/logos/react.png' },
   { name: 'JavaScript', icon: '/logos/JavaScript.png' },
   { name: 'HTML5', icon: '/logos/html.png' },
-  { name: 'CSS3', icon: '/logos/css3.svg' },
+  { name: 'CSS3', icon: '/logos/css.png' },
   { name: 'Node.js', icon: '/logos/nodejs.svg' },
   { name: 'Git', icon: '/logos/git.svg' },
 ];
