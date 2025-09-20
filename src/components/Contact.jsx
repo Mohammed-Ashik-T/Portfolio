@@ -1,9 +1,27 @@
+import './Contact.css';
+
 export default function Contact() {
   return (
-    <section style={{ background: '#000', padding: '60px 20px', color: '#38bdf8', textAlign: 'center' }}>
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:ashik@example.com">ashik@example.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/ashik">linkedin.com/in/ashik</a></p>
+    <section className="contact-section">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations, projects, or just to say hi!</p>
+
+      {/* Contact Info */}
+      <div className="contact-info">
+        <a href="mailto:your.email@example.com">✉ ashikchamp01@gmail.com</a>
+        <a href="tel:+911234567890">📱 +91 12345 67890</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      </div>      
+
+      <form className="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
     </section>
+    
   );
 }
+
