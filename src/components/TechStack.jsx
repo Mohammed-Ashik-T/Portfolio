@@ -1,13 +1,27 @@
 import { useEffect, useRef } from "react";
 import './TechStack.css';
 
+// Import images from src/assets
+import reactIcon from "../assets/react.png";
+import jsIcon from "../assets/JavaScript.png";
+import htmlIcon from "../assets/html.png";
+import cssIcon from "../assets/css.png";
+import gitIcon from "../assets/git.png";
+import pythonIcon from "../assets/python.png";
+import postgresIcon from "../assets/postgresql.png";
+import agileIcon from "../assets/agile.png";
+import githubIcon from "../assets/github.png";
+
 const techs = [
-  { name: 'React', icon: '/logos/react.png' },
-  { name: 'JavaScript', icon: '/logos/JavaScript.png' },
-  { name: 'HTML5', icon: '/logos/html.png' },
-  { name: 'CSS3', icon: '/logos/css.png' },
-  { name: 'Node.js', icon: '/logos/nodejs.svg' },
-  { name: 'Git', icon: '/logos/git.svg' },
+  { name: 'React', icon: reactIcon },
+  { name: 'JavaScript', icon: jsIcon },
+  { name: 'HTML5', icon: htmlIcon },
+  { name: 'CSS3', icon: cssIcon },
+  { name: 'Python', icon: pythonIcon },
+  { name: 'PostgreSQL', icon: postgresIcon },
+  { name: 'Agile', icon: agileIcon },
+  { name: 'Git', icon: gitIcon },
+  { name: 'GitHub', icon: githubIcon },
 ];
 
 export default function TechStack() {
@@ -20,12 +34,12 @@ export default function TechStack() {
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
-      minHeight: 600.00,
-      minWidth: 200.00,
-      scale: 1.00,
-      scaleMobile: 1.00,
+      minHeight: 600.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
       color: 0x38bdf8,
-      backgroundColor: 0x0f0f0f
+      backgroundColor: 0x0f0f0f,
     });
   }, []);
 
@@ -37,7 +51,6 @@ export default function TechStack() {
           <div className="tech-item" key={tech.name}>
             <div className="glow-wrapper" title={tech.name}>
               <img src={tech.icon} alt={tech.name} />
-              
             </div>
           </div>
         ))}

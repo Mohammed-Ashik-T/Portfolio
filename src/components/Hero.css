@@ -5,6 +5,8 @@
 }
 
 .hero-overlay {
+  position: relative;   /* 🔑 makes z-index work */
+  z-index: 1;           /* 🔑 ensures overlay is above Vanta background */
   background: rgba(15, 15, 15, 0.8);
   height: 100%;
   display: flex;
@@ -19,6 +21,8 @@
   padding: 0 5%;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .hero-text {
@@ -30,6 +34,7 @@
   font-size: 3.5rem;
   font-weight: 700;
   color: white;
+  line-height: 1.2;
 }
 
 .hero-text span {
@@ -53,6 +58,7 @@
   font-weight: bold;
   border-radius: 30px;
   transition: 0.3s;
+  text-decoration: none; /* prevent underline if <a> */
 }
 
 .hero-btn:hover {
@@ -67,6 +73,8 @@
   border: 5px solid #38bdf8;
   box-shadow: 0 0 30px #38bdf8aa;
   transition: transform 0.3s;
+  object-fit: cover;
+  background: #111; /* fallback if image doesn't load */
 }
 
 .hero-img img:hover {
